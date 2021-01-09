@@ -3,7 +3,7 @@
 
 alias dofl='/usr/bin/git --git-dir=/home/igor/.dotfiles/ --work-tree=/home/igor'
 alias sozs='source ~/.zshrc'
-
+alias v=   'vim'
 
 function mkcd() {
 	mkdir $@
