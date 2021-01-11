@@ -6,6 +6,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'cdelledonne/vim-cmake'
 Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -188,7 +189,6 @@ set title
 set confirm
 set statusline=%<%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&encoding}\ %b\ 0x%B\ %l,%c%V\ %P 
 set visualbell 
-set hidden 
 set t_Co=256
 set smartindent
 set autoindent
@@ -219,7 +219,16 @@ let g:floaterm_width    = 1.0
 let g:floaterm_height   = 0.3
 let g:floaterm_position = 'bottom'
 
-nmap <c-t> :FloatermNew fff<cr>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+autocmd VimEnter * NERDTree
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+set modifiable
+
 
 let g:fzf_preview_window = ['right:50%', 'ctrl-/']
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
