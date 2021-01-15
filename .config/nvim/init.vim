@@ -237,7 +237,8 @@ let g:cmake_link_compile_commands = 1
 
 let g:startify_bookmarks = [
   \ { 'z': '~/.zshrc' },
-  \ { 'v': '~/.config/nvim/init.vim' }
+  \ { 'v': '~/.config/nvim/init.vim' },
+  \ { 's': '~/.config/sway/config' }
   \ ]
 
 let g:startify_custom_header = [
