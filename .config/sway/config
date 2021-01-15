@@ -33,7 +33,7 @@ client.unfocused 	#282a2e #282a2e #969896 #282a2e
 client.urgent 		#373b41 #cc6666 #ffffff #cc6666
 
 input "1266:2099:CHICONY_USB_Keyboard" {
-    xkb_layout "us,ru"
+    xkb_layout "us(dvp),ru"
     xkb_options "grp:lctrl_lwin_toggle,grp_led:scroll"
 }
 input "1266:2099:CHICONY_USB_Keyboard" xkb_model "pc101"
