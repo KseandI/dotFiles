@@ -32,11 +32,11 @@ client.focused_inactive #373b41 #373b41 #969896 #282a2e
 client.unfocused 	#282a2e #282a2e #969896 #282a2e
 client.urgent 		#373b41 #cc6666 #ffffff #cc6666
 
-input "1266:2099:CHICONY_USB_Keyboard" {
+input * {
     xkb_layout "us,ru"
     xkb_options "grp:lctrl_lwin_toggle,grp_led:scroll"
+	xkb_model "pc105"
 }
-input "1266:2099:CHICONY_USB_Keyboard" xkb_model "pc101"
 input "2522:37008:A4TECH_USB_Device" accel_profile flat
 
 bindsym Pause exec /home/igor/.config/sway/backlight.sh
