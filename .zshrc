@@ -6,6 +6,7 @@ alias sozs='source ~/.zshrc'
 alias v='vim'
 alias n='nvim'
 alias rmf='rm -rf'
+alias s='systemctl'
 
 function mkcd() {
 	mkdir $@
