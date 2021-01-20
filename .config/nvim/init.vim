@@ -242,6 +242,7 @@ let g:startify_bookmarks = [
   \ ]
 
 let g:startify_custom_header = [
+  \ '                                     ',
   \ '                         _           ',
   \ '                        (_)          ',
   \ '   _ __   ___  _____   ___ _ __ ___  ',
