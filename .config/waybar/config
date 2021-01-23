@@ -2,53 +2,22 @@
 
 {
 	"layer": "top",
-	"position": "bottom",
+	"position": "left",
 
 	"modules-left": [
 		"sway/workspaces",
-		"custom/right-arrow-dark"
 	],
 	"modules-center": [
-		
-		"custom/left-arrow-dark",
-		"sway/window",
-		"custom/right-arrow-dark"
 	],
 	"modules-right": [
-		"custom/left-arrow-dark",
 		"pulseaudio",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"memory",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"cpu",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"disk",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"clock#1",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
+		"clock",
 		"tray"
 	],
 
-	"custom/left-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/left-arrow-light": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/right-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/right-arrow-light": {
-		"format": "",
-		"tooltip": false
+	"custom/space": {
+		"format": " ",
+		"tooltip": false,
 	},
 
 	"sway/workspaces": {
@@ -56,19 +25,10 @@
 		"format": "{name}"
 	},
 
-	"clock#1": {
+	"clock": {
 		"interval": 1,
-		"format": "{:%H:%M:%S}",
+		"format": "{:%Y-%m-%d\nT%H:%M:%S}",
 		"tooltip": true,
-		"tooltip-format": "<big>{:%Y-%m-%d}</big>"
-	},
-	"clock#2": {
-		"format": "{:%H:%M}",
-		"tooltip": false
-	},
-	"clock#3": {
-		"format": "{:%m-%d}",
-		"tooltip": false
 	},
 
 	"pulseaudio": {
@@ -108,11 +68,6 @@
 			"",
 			""
 		]
-	},
-	"disk": {
-		"interval": 5,
-		"format": "Disk {percentage_used:2}%",
-		"path": "/"
 	},
 	"tray": {
 		"icon-size": 20
