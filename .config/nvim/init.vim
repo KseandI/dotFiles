@@ -15,7 +15,6 @@ set title
 set hidden
 set confirm
 set statusline=%<%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&encoding}\ %l,%c%V 
-set visualbell 
 "set t_Co=256
 set smartindent
 set autoindent
