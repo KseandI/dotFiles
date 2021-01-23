@@ -13,5 +13,6 @@ alias n='nvim'
 alias rmf='rm -rf'
 alias s='systemctl'
 
+eval "$(fasd --init auto)"
 
 export PS1="\u[\w]>\[$(tput sgr0)\] "
