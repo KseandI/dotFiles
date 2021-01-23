@@ -1,13 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-name=$(whoami)
-export PS1="$name [$(pwd)]> "
-alias dofl='/usr/bin/git --git-dir=/home/igor/.dotfiles/ --work-tree=/home/igor'
-alias sozs='source ~/.zshrc'
-alias v='vim'
-alias n='nvim'
-alias rmf='rm -rf'
-alias s='systemctl'
+
+source ~/.shellrc
 
 function mkcd() {
 	mkdir $@

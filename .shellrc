@@ -1,0 +1,16 @@
+SHELL_LIST_FILES='exa'
+
+alias ls='$SHELL_LIST_FILES --color=auto'
+alias dofl='/usr/bin/git --git-dir=/home/igor/.dotfiles/ --work-tree=/home/igor'
+alias sorc='source ~/.shellrc'
+alias v='vim'
+alias n='nvim'
+alias rmf='rm -rf'
+alias s='systemctl'
+alias e='$SHELL_LIST_FILES'
+alias E='$SHELL_LIST_FILES -lag'
+
+eval "$(fasd --init auto)"
+
+export PS1="\u[\w]> "
+export PROMPT="%n [%d]> "
