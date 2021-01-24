@@ -9,7 +9,6 @@ set showtabline=2
 set title
 set confirm
 set statusline=%<%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&encoding}\ %b\ 0x%B\ %l,%c%V\ %P 
-set visualbell 
 set hidden 
 set t_Co=256
 set smartindent
