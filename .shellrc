@@ -9,6 +9,7 @@ alias rmf='rm -rf'
 alias s='systemctl'
 alias e='$SHELL_LIST_FILES'
 alias E='$SHELL_LIST_FILES -lag'
+alias sudo="doas"
 
 eval "$(fasd --init auto)"
 
