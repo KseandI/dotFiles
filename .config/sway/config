@@ -10,7 +10,7 @@ exec_always {
 	gsettings set $gnome-schema icon-theme "Faenza"
 }
 
-gaps inner 15
+gaps inner 5
 
 font "Liberation Mono 8"
 
