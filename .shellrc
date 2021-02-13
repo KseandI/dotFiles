@@ -15,3 +15,4 @@ eval "$(fasd --init auto)"
 
 export PS1="\u[\w]> "
 export PROMPT="%n [%d]> "
+export RPROMPT=''
