@@ -4,12 +4,6 @@
 ##
 
 
-set $gnome-schema org.gnome.desktop.interface
-
-exec_always {
-	gsettings set $gnome-schema icon-theme "Faenza"
-}
-
 gaps inner 5
 
 font "Liberation Mono 8"
