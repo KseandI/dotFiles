@@ -1,7 +1,7 @@
 
 
 runtime myPlugs.vim
-runtime cocconf.vim
+"runtime cocconf.vim
 
 let g:loaded_matchparen=1
 
@@ -45,19 +45,20 @@ let g:floaterm_width    = 1.0
 let g:floaterm_height   = 0.3
 let g:floaterm_position = 'bottom'
 
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+"nnoremap <leader>n :NERDTreeFocus<CR>
+"nnoremap <C-n> :NERDTree<CR>
+"nnoremap <C-t> :NERDTreeToggle<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
 
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
+"let g:NERDTreeDirArrowExpandable = '+'
+"let g:NERDTreeDirArrowCollapsible = '-'
+"autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+"    \ quit | endif
 
 
-let g:fzf_preview_window = ['right:50%', 'ctrl-/']
-let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+"let g:fzf_preview_window = ['right:50%', 'ctrl-/']
+"let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+
 let g:cmake_link_compile_commands = 1
 
 let g:startify_bookmarks = [
@@ -83,5 +84,5 @@ let g:startify_lists = [
       \ ]
 
 autocmd VimEnter * if argc() == 0 | Startify | endif
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd l
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd l
