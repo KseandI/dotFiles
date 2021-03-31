@@ -1,5 +1,7 @@
 SHELL_LIST_FILES='exa'
 
+alias laravel='~/.composer/vendor/bin/laravel'
+
 alias ls='$SHELL_LIST_FILES --color=auto'
 alias dofl='/usr/bin/git --git-dir=/home/igor/.dotfiles/ --work-tree=/home/igor'
 alias sorc='source ~/.shellrc'
@@ -13,7 +15,5 @@ alias sudo="doas"
 alias m='micro'
 
 export PS1="\u[\w]> "
-export PROMPT="%n [%d]> "
+export PROMPT="%n [%d](%?)> "
 export RPROMPT=''
-
-echo 'Dimmite mihi, quoniam ego sum optimus'
