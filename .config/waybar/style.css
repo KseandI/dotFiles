@@ -10,7 +10,7 @@ window#waybar {
 }
 
 #workspaces,
-#clock,
+/*#clock,*/
 #pulseaudio,
 #battery,
 #custom-space,

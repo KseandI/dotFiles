@@ -3,8 +3,22 @@
 ##    config
 ##
 
+# Colors from Deb_Dots arc theme
+set $active #5294E2
+#set $active #88C0D0
+#set $active 	#FF4040
+set $unfocused	#FFFFFF
+set $fg		#FFFFFF
+set $bg		#383c4a
+set $bar	#404552
 
-gaps inner 5
+#Window Border color			border		backgr		text				indicator
+client.focused						$active		$active		$fg					$fg
+client.focused_inactive		$bg     	$bg				$unfocused	$fg
+client.unfocused					$bg     	$bg				$unfocused	$fg
+client.urgent							$bg     	$bg				$fg					$fg
+
+gaps inner 2
 
 font "Liberation Mono 8"
 
@@ -21,11 +35,6 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master toggle
 #for_window [class="^.*"] border pixel 1
 #default_border pixel 1
 
-client.focused 		#81a2be #81a2be #1d1f21 #282a2e
-client.focused_inactive #373b41 #373b41 #969896 #282a2e
-client.unfocused 	#282a2e #282a2e #969896 #282a2e
-client.urgent 		#373b41 #cc6666 #ffffff #cc6666
-
 input * {
     xkb_layout "us,ru"
     xkb_options "grp:lctrl_lwin_toggle,grp_led:scroll"
@@ -33,7 +42,7 @@ input * {
 }
 input "2522:37008:A4TECH_USB_Device" accel_profile flat
 
-bindsym Pause exec /home/igor/.config/sway/backlight.sh
+bindsym Pause exec grim
 
 ### Variables
 #

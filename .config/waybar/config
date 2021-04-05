@@ -2,16 +2,16 @@
 
 {
 	"layer": "top",
-	"position": "left",
+	"position": "top",
 
 	"modules-left": [
 		"sway/workspaces",
 	],
 	"modules-center": [
+		"clock"
 	],
 	"modules-right": [
 		"pulseaudio",
-		"clock",
 		"tray"
 	],
 
