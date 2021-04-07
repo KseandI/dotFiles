@@ -36,11 +36,16 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master toggle
 #default_border pixel 1
 
 input * {
-    xkb_layout "us,ru"
+    xkb_layout 	"us,ru"
     xkb_options "grp:lctrl_lwin_toggle,grp_led:scroll"
 	xkb_model "pc105"
 }
 input "2522:37008:A4TECH_USB_Device" accel_profile flat
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+	tap 					enabled
+	dwt 					disabled
+	scroll_factor 0.5
+}
 
 bindsym Pause exec grim
 
