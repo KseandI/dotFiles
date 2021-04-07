@@ -1,11 +1,7 @@
-SHELL_LIST_FILES='exa'
-
 alias laravel='~/.composer/vendor/bin/laravel'
 
-alias ls='$SHELL_LIST_FILES --color=auto'
 alias dofl='/usr/bin/git --git-dir=/home/igor/.dotfiles/ --work-tree=/home/igor'
 alias sorc='source ~/.shellrc'
-alias v='vim'
 alias n='nvim'
 alias rmf='rm -rf'
 alias s='systemctl'
