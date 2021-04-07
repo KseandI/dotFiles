@@ -9,10 +9,8 @@ alias v='vim'
 alias n='nvim'
 alias rmf='rm -rf'
 alias s='systemctl'
-alias e='$SHELL_LIST_FILES'
-alias E='$SHELL_LIST_FILES -lag'
+alias e='exa -lag'
 alias sudo="doas"
-alias m='micro'
 
 export PS1="\u[\w]> "
 export PROMPT="%n [%d](%?)> "
