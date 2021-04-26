@@ -29,8 +29,6 @@
 (setq auto-save-list-file-name nil)
 (setq auto-save-default nil)
 
-(add-to-list 'default-frame-alist '(font . "Liberation Mono" ))
-(set-face-attribute 'default t :font "Liberation Mono" :height 80)
 
 					; Ido
 
