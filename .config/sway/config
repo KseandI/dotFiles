@@ -261,7 +261,7 @@ bar {
 				background 				 #101010
 				inactive_workspace #101010 #101010 #fcfcfc
 		}
-		#status_command i3status-rs
+		status_command i3status-rs
     #swaybar_command waybar
 }
 
