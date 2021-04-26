@@ -1,0 +1,8 @@
+[[block]]
+block = "sound"
+step_width = 3
+
+[theme]
+name = "native"
+[icons]
+name = "none"
