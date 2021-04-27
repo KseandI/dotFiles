@@ -17,12 +17,13 @@ client.focused_inactive		$bg     	$bg				$unfocused	$fg
 client.unfocused					$bg     	$bg				$unfocused	$fg
 client.urgent							$bg     	$bg				$fg					$fg
 
-gaps inner 2
+#gaps inner 2
 
 font "Liberation Mono 8"
 
 title_align center
-default_border pixel 2
+#default_border pixel 2
+default_border pixel 1
 default_floating_border none
 #hide_edge_borders both
 
