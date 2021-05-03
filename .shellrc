@@ -5,7 +5,7 @@ alias sorc='source ~/.shellrc'
 alias n='nvim'
 alias rmf='rm -rf'
 alias s='systemctl'
-alias e='exa -lagF@muUh --git --time-style=long-iso -sname'
+alias e='exa -lagF@Uh --git --time-style=long-iso -sname'
 alias sudo="doas"
 
 export PS1="\u[\w]> "
