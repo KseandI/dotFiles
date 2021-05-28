@@ -35,3 +35,6 @@ bindkey '^[[B' history-substring-search-down
 
 bindkey "^[[3~" delete-char
 bindkey "^H" backward-kill-word 
+
+export PROMPT="%n [%d](%?)> "
+export RPROMPT=''
