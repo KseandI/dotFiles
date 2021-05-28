@@ -8,6 +8,6 @@ alias s='systemctl'
 alias e='exa -lagF@Uh --git --time-style=long-iso -sname'
 alias sudo="doas"
 
-export PS1="\u[\w]> "
+export PS1="\u[\W](\$?)> "
 export PROMPT="%n [%d](%?)> "
 export RPROMPT=''
