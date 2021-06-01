@@ -36,5 +36,5 @@ bindkey '^[[B' history-substring-search-down
 bindkey "^[[3~" delete-char
 bindkey "^H" backward-kill-word 
 
-export PROMPT="%n [%d](%?)> "
+export PROMPT="%F{green}%n%f %F{yellow}[%f%F{red}%d%f%F{yellow}]%f%F{blue}(%?)%f%F{gray}>%f "
 export RPROMPT=''
