@@ -34,7 +34,7 @@ exec swayidle -w \
 input * {
     xkb_layout 	"us,ru"
 #		xkb_variant "dvp",
-    xkb_options "grp:lctrl_lwin_toggle,grp_led:scroll,ctrl:nocaps"
+    xkb_options "grp:lctrl_lwin_toggle,grp_led:caps,ctrl:nocaps"
 	xkb_model "pc105"
 }
 input "2522:37008:A4TECH_USB_Device" {
