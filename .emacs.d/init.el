@@ -1,21 +1,3 @@
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-;(require 'xah-html-mode)
-;(require 'xah-elisp-mode)
-;(require 'xah-css-mode)
-
-
-					; Rust
-
-(require 'rust-mode)
-
-
-					; Linum
-
-(require 'linum+)
-(global-linum-mode 1)
-(setq linum-format "%4d ")
-
-
 					; Emacs global settings
 
 (save-place-local-mode)
@@ -32,23 +14,41 @@
 
 					; Ido
 
-(require 'ido)
-(ido-mode t)
-(setq ido-enable-flex-matching t)
-
+(if (provide 'ido)
+    (progn
+     (message "Ido loaded")
+     (ido-mode t)
+     (setq ido-enable-flex-matching t)
+     (global-set-key (kbd "M-o") 'ido-find-file)
+     )
+  (progn
+   (message "Can't load ido")
+   (global-set-key (kbd "M-o") 'find-file)
+   )
+  )
 
 					; Bs
 
-(require 'bs)
-(setq bs-configurations
-      '(("files" "^\\*scratch\\*" nil nil bs-visits-non-file bs-sort-buffer-interns-are-last)))
-(global-set-key (kbd "M-b") 'bs-show)
+(if (provide 'bs)
+    (progn
+      (message "Bs loaded")
+      (setq bs-configurations
+	    '(("files" "^\\*scratch\\*" nil nil bs-visits-non-file bs-sort-buffer-interns-are-last)))
+      (global-set-key (kbd "M-b") 'bs-show)
+      )
+  (progn
+    (message "Can't load bs")
+    )
+  )
 
 
 					; Theme
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme `weyland-yutani t)
+(if (load-theme `weyland-yutani t)
+    (message "Theme loaded")
+  (message "Can't load theme")
+  )
 (setq hl-paren-colors '("#000000"))
 (setq hl-paren-background-colors '("#B376D2"))
 
@@ -72,6 +72,15 @@
   (yank)
   (insert "\n")
   (previous-line)
+  (end-of-line)
+  )
+(defun new-line-down ()
+  (interactive)
+  (next-line)
+  (beginning-of-line)
+  (insert "\n")
+  (previous-line)
+  (indent-according-to-mode)
   )
 
 (global-set-key (kbd "C-s") 'save-buffer)
@@ -84,8 +93,25 @@
 (global-set-key (kbd "C-h") 'backward-char)
 (global-set-key (kbd "C-j") 'next-line)
 (global-set-key (kbd "C-k") 'previous-line)
+(global-set-key (kbd "M-q") 'kill-emacs)
+(global-set-key (kbd "C-o") 'new-line-down)
 
 
-					;Window control
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(global-set-key (kbd "C-v") 'yank)
+					; Linum
+
+(if (provide 'linum+)
+    (progn
+      (message "Linum loaded")
+      (global-linum-mode 1)
+      (setq linum-format "%4d ")
+      )
+  (message "Can't load linum")
+  )
+
+
+(if (provide 'igor-cpp)
+    (message "cpp modules loaded")
+  (message "Can't load cpp modules")
+  )
