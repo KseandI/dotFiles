@@ -24,6 +24,7 @@ src/
 .bash*
 .Xauthority
 README.md
+*.png
 
 secrtetPassword.txt
 whyAreYouReadingMyGitIgnore.question
