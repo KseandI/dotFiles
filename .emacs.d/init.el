@@ -1,3 +1,4 @@
+
 					; Emacs global settings
 
 (save-place-local-mode)
@@ -82,19 +83,14 @@
   (previous-line)
   (indent-according-to-mode)
   )
+(defun new-line-up ()
+  (interactive)
+  (beginning-of-line)
+  (insert "\n")
+  (previous-line)
+  (indent-according-to-mode)
+  )
 
-(global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "C-x") 'kill-region)
-(global-set-key (kbd "C-c") 'kill-ring-save)
-(global-set-key (kbd "C-v") 'yank)
-(global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "C-d") 'duplicate-line-down)
-(global-set-key (kbd "C-l") 'forward-char)
-(global-set-key (kbd "C-h") 'backward-char)
-(global-set-key (kbd "C-j") 'next-line)
-(global-set-key (kbd "C-k") 'previous-line)
-(global-set-key (kbd "M-q") 'kill-emacs)
-(global-set-key (kbd "C-o") 'new-line-down)
 
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
@@ -111,7 +107,23 @@
   )
 
 
-(if (provide 'igor-cpp)
+(if (provide 'kseandi-cpp)
     (message "cpp modules loaded")
   (message "Can't load cpp modules")
   )
+
+
+(global-set-key (kbd "C-x") 'kill-region)
+(global-set-key (kbd "C-c") 'kill-ring-save)
+(global-set-key (kbd "C-v") 'yank)
+(global-set-key (kbd "C-z") 'undo)
+(global-set-key (kbd "C-d") 'duplicate-line-down)
+
+(global-set-key (kbd "C-l") 'forward-char)
+(global-set-key (kbd "C-h") 'backward-char)
+(global-set-key (kbd "C-j") 'next-line)
+(global-set-key (kbd "C-k") 'previous-line)
+
+(global-set-key (kbd "M-q") 'kill-emacs)
+(global-set-key (kbd "C-o") 'new-line-down)
+(global-set-key (kbd "C-O") 'new-line-up)
