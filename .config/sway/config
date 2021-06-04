@@ -58,6 +58,7 @@ set $right l
 
 set $term alacritty
 set $menu bemenu-run
+set $screenshot grim
 
 output * bg /home/igor/pictures/wallpaper.jpg fill
 
@@ -66,15 +67,12 @@ exec mako
 ### Key bindings
 # Basics:
     bindsym $mod+Return exec $term
+    bindsym $mod+d exec $menu
+    bindsym Print exec $screenshot
 
     bindsym $mod+Shift+q kill
-
-    bindsym $mod+d exec $menu
-
     floating_modifier $mod normal
-
     bindsym $mod+Shift+c reload
-
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 # Moving around:
