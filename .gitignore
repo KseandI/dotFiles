@@ -23,6 +23,7 @@ src/
 .cache/
 .bash*
 .Xauthority
+README.md
 
 secrtetPassword.txt
 whyAreYouReadingMyGitIgnore.question
