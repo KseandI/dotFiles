@@ -113,6 +113,7 @@
   )
 
 
+(global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-x") 'kill-region)
 (global-set-key (kbd "C-c") 'kill-ring-save)
 (global-set-key (kbd "C-v") 'yank)
@@ -126,4 +127,4 @@
 
 (global-set-key (kbd "M-q") 'kill-emacs)
 (global-set-key (kbd "C-o") 'new-line-down)
-(global-set-key (kbd "C-O") 'new-line-up)
+(global-set-key (kbd "C-S-o") 'new-line-up)
