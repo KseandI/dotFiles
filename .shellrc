@@ -1,5 +1,3 @@
-alias laravel='~/.composer/vendor/bin/laravel'
-
 alias dofl='/usr/bin/git --git-dir=/home/igor/.dotfiles/ --work-tree=/home/igor'
 alias sorc='source ~/.shellrc'
 alias n='nvim'
