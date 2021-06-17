@@ -18,7 +18,7 @@ set statusline=%<%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&
 set t_Co=256
 set smartindent
 set autoindent
-set tabstop=2
+set tabstop=8
 set shiftwidth=2 
 set cursorline
 set autoread
