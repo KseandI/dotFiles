@@ -45,7 +45,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 	dwt 					disabled
 }
 
-bindsym Pause exec grim
+bindsym Pause exec grim -c
 
 ### Variables
 
