@@ -27,8 +27,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse set Master 1%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse set Master 1%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master toggle
 
-exec swayidle -w \
-                timeout 300 'swaylock -F -c 121212'
+#exec swayidle -w \
+#                timeout 300 'swaylock -F -c 121212'
 
 
 input * {
@@ -69,6 +69,7 @@ exec mako
     bindsym $mod+Return exec $term
     bindsym $mod+d exec $menu
     bindsym Print exec $screenshot
+    bindsym $mod+o exec swaylock -F -c 121212
 
     bindsym $mod+Shift+q kill
     floating_modifier $mod normal
